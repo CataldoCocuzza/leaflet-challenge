@@ -39,18 +39,18 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
     };
   }
 
-  // This function determines the color of the marker based on the magnitude of the earthquake.
-  function getColor(depth) {
+  // This function determines the color of the marker based on the Depth of the earthquake.
+  function getColor(Depth) {
     switch (true) {
-      case depth > 90:
+      case Depth > 90:
         return "#ea2c2c";
-      case depth > 70:
+      case Depth > 70:
         return "#ea822c";
-      case depth > 50:
+      case Depth > 50:
         return "#ee9c00";
-      case depth > 30:
+      case Depth > 30:
         return "#eecc00";
-      case depth > 10:
+      case Depth > 10:
         return "#d4ee00";
       default:
         return "#98ee00";
